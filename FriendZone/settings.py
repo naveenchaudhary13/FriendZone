@@ -27,7 +27,19 @@ SECRET_KEY = 'django-insecure-&cjig5axnghkn@%p5j1du#6)!y8@==*=l#8pap1dfli=r_4xzj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    'friendzone-y6ki.onrender.com',
+    'friendzone.mooo.com',
+    'localhost',
+    '127.0.0.1',
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://friendzone-y6ki.onrender.com',
+    'https://friendzone.mooo.com',
+]
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 
 # Application definition
